@@ -160,7 +160,7 @@ Steps same for Mac, iOS jobs and Android Jobs
 15. Jenkins: Auto trigger jobs using Build Frequency (Recommended)
 =================================================================
 
-Test SCM Polling
+Test  Git Webhooks 
 
 
 
