@@ -76,7 +76,7 @@ https://github.com/saucelabs/sample-app-mobile/blob/master/docs/BUILDING.md
 -> If you observe any error, open ./iOS/podfile and then update the build version to 10.0 or higher
 -> Navigate back to root project folder and execute yarn install
 -> If you observe any error, delete ./ios/yarn.lock file and then try yarn install again
--> react-native run-ios --device --udid 0124B8B2-3468-49EB-8BF1-E327BA06995F
+-> react-native run-ios --udid 0124B8B2-3468-49EB-8BF1-E327BA06995F
 
 
 6. Mac: Install and Configure Jenkins
@@ -85,7 +85,7 @@ https://github.com/saucelabs/sample-app-mobile/blob/master/docs/BUILDING.md
 -> brew services start jenkins-lts
 -> launch http://localhost:8080
 -> Unlock Jenkins: 
-Admin password: /Users/Om/.jenkins/secrets/initialAdminPassword
+Admin password: 
 -> Create first admin user and login
 
 
@@ -153,16 +153,22 @@ Steps same for Mac, iOS jobs and Android Jobs
 Steps same for Mac, iOS jobs and Android Jobs
 
 -> Install Git integration plugin
--> Use ngrok to expose localhost over internet using randomized url
+-> Use ngrok to expose localhost over internet using randomized url (on real project, should working
+with security team to setting the jenkins...)
+
+on terminal at the folder contain ngrok (cd /Users/letrongtanbs/Downloads/ngrok)-> command:
+./ngrok http 8080
+Copy the forwarding link ...ngrok.io -> http://localhost:8080/
+Go to github setting the Webhooks
 
 
 
 15. Jenkins: Auto trigger jobs using Build Frequency (Recommended)
 =================================================================
 
-Test  Git Webhooks running
 
-
+To push the change:
+cd /Users/letrongtanbs/Desktop/Study/appium/guideline/github/sample-app-mobile
 
 
 
